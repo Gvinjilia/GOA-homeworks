@@ -55,6 +55,12 @@ for i in range(1, number + 1):
         divisors.append(i)
 print("number devisiors are:", divisors)
 #შექმენით პროგრამა, რომელიც მომხარებელს შემოატანინებს წელს და დაპრინტავს რომელი საუკუნეა ის
-year = int(input("Enter a year: "))
-century = (year - 1) // 100 + 1
-print(f"{year} year is {century} century")
+years = int(input("Enter the number of years: "))
+
+century = years // 100
+remaining_years = years % 100
+
+if remaining_years == 0:
+    print(century)
+else:
+    print(century + 1)
