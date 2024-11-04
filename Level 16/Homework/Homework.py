@@ -7,11 +7,13 @@ for number in numbers:
 
 print("Max_Number:", max_number)
 #შექმენით რიცხვების სია და დაბეჭდეს სიის თითოეული რიცხვის ფაქტორიალი
-import math
-numbers = [4, 3, 6, 5, 44, 7, 8, 9]
-for num in numbers:
-    factorial = math.factorial(num)
-    print(f"{num} factorial is: {factorial}")
+numbers = [5, 7, 3, 2, 6]
+for number in numbers:
+    product = 1
+    for i in range(1, number + 1):
+        # product = product * i
+        product *= i
+    print(product)
 #შექმენით სია სადაც გექნებათ რიცხვები. for loop-ის გამოყენებით იპოვეთ ამ სიაში ყველაზე პატარა რიცხვი
 numbers=[2,9,8,6,5,3,5]
 min_numbers=numbers[0]
@@ -21,7 +23,7 @@ for number in numbers:
 print("Min_Numbers:",min_numbers)
 #შექმენით რიცხვების სია სადაც გექნებათ დადებითი და უარყოფითი რიცხვები, შემდეგ შექმენით ახალი სია სადაც გექნებათ 
 #მხოლოდ უარყოფითი რიცხვები და დაბეჭდეთ ის(გამოიყენეთ while).
-numbers = [10, -5, 3, -2, -8, 7, -1, 6]
+numbers = [10, 5, 3, -2, -8, 7, -1, 6]
 negative_numbers = []
 index = 0
 
@@ -37,8 +39,11 @@ numbers = [1, 2, 3, 4, 5, 6, 7]
 for i in range(len(numbers) - 1, -1, -1):
     print(numbers[i])
 #შექმენით სიმბოლოების სია, სადაც იქნება დუბლიკატები. შექმენით ახალი სია სადაც ყველა სიმბოლო მხოლოდ ერთხელ გვხვდება
-simboloebi=[1,1,3,3,4,5,6,7,8,9]
-simboloebi=[1,9,5,3,29,10]
+chars = ["a", "c", "a", "c", "c", "b", "c"]
+no_duplicates = []
+for char in chars:
+     if no_duplicates.count(char) == 0:
+         no_duplicates.append(char)
 #შექმენით ცლვადი სადაც შეინახავთ string-ს, შემდეგ შექმენით ახალი ცვლადი სადაც შეინახავთ ამ სტრინგს შემოტრიალებულად და დაბეჭდეთ ის
 str="Nino"
 str2="oniN"
@@ -51,6 +56,12 @@ for i in range(1, number + 1):
         divisors.append(i)
 print("number devisiors are:", divisors)
 #შექმენით პროგრამა, რომელიც მომხარებელს შემოატანინებს წელს და დაპრინტავს რომელი საუკუნეა ის
-year = int(input("Enter a year: "))
-century = (year - 1) // 100 + 1
-print(f"{year} year is {century} century")
+years = int(input("Enter the number of years: "))
+
+century = years // 100
+remaining_years = years % 100
+
+if remaining_years == 0:
+    print(century)
+else:
+    print(century + 1)
