@@ -45,7 +45,3 @@ print(sliced_lists)
 numbers=["1","2","3","4","5"]
 slice=numbers[0:5]
 print(slice)
-
-word = "run"
-word[0] = "f"
-print(word)
