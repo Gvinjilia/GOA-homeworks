@@ -7,10 +7,10 @@ final=multiply(2,2)
 print(final)
 
 def find_smallest_int(arr):
-    smallest_int=[]
+    smallest_int=arr[0]
     for number in arr:
-        if number < 0:
-            smallest_int +=number
+        if number < smallesT_int:
+            smallest_int = number
     return smallest_int  
 
 def solution(string):
