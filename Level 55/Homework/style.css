@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Sour Gummy", serif;
+}
+
+body{
+    padding:20px;
+}
+
+.main1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap:20px
+}
+
+.card{
+    border: 1px solid #d3cfcf;
+    border-radius: 8px;
+    width:400px;
+    text-align:left;
+}
+
+
+.card img{
+    width: 200px;
+}
+
+.card h3{
+    font-family: "Sour Gummy", serif;;
+}
+
