@@ -1,1 +1,1 @@
-#none.py
+print('none.py')
